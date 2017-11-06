@@ -92,7 +92,7 @@ describe 'the search process' do
         zipcode: '02109'
       )
     end
-    
+
     let(:user_two) do
       delay
       create(
@@ -104,7 +104,7 @@ describe 'the search process' do
         zipcode: '10118'
       )
     end
-    
+
     let(:user_three) do
       delay
       create(
@@ -172,8 +172,8 @@ describe 'the search process' do
         fill_in 'City', with: 'Gotham'
         fill_in 'State', with: 'NY'
         fill_in 'Zipcode', with: '12345'
-        fill_in 'Password', with: 'asdfqwer'
-        fill_in 'Password confirmation', with: 'asdfqwer'
+        fill_in 'Change Password', with: 'asdfqwer'
+        fill_in 'Change Password Confirmation', with: 'asdfqwer'
         fill_in 'Current password', with: 'password'
         click_button 'Update'
 
